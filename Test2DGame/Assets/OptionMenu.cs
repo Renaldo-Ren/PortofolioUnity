@@ -1,0 +1,20 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Audio;
+
+public class OptionMenu : MonoBehaviour
+{
+    public AudioMixer mainMixer;
+
+    public void setMusic(float music)
+    {
+        mainMixer.SetFloat("Music", music);
+    }
+
+  public void FullScreen(bool isFullscreen)
+    {
+        Screen.fullScreen = isFullscreen;
+      
+    }
+}
